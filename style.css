@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+*{
+
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width : 100%;
+    height : 100vh;
+    background-image: url(artistic-blurry-colorful-wallpaper-background_58702-9666.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.logo{
+    animation-name:my;
+        animation-duration:2s;
+}
+nav{
+    width : 50%;
+    height : 10vh;
+}
+.nav-container{
+    width :  100%;
+    height : 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-container .logo img{
+    width : 80px;
+}
+
+.nav-container .links{
+    display: flex;
+}
+.links .link{
+    position: relative;
+    margin:0 10px; 
+    cursor: pointer;
+    animation-name:my;
+        animation-duration:2s;
+      
+ 
+}
+
+.links .link::before{
+    
+    position: absolute;
+    top :0;
+    left :0;
+    width : 100%;
+    height : 100%;
+    transform:scale(0);
+        border-radius: 5px;
+    border:2px solid transparent ;
+    transition: transform 0.3s ease, border-color 0.3s ease ;
+}
+
+
+
+.links .link:hover::before{
+    transform:scale(1.2);
+    
+    border-color: whitesmoke;
+
+}
+.links .link a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: 0,3s ease;
+    
+}
+.links .link a:hover{
+    box-shadow: 40px 0 100px whitesmoke;
+    border: white solid 3px;
+    border-radius: 20px;
+   
+   
+}
+
+section{
+    width :  100%;
+    height : 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section .content{
+    width : 35%;
+    color: white;
+}
+.content h2{
+    color: #d2911c;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.content h1{
+    font-size: 3rem;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 100;
+}
+.content h1 span{
+    font-size: 4rem;
+    color: #d2911c;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 100;
+}
+.content hr{
+    width : 35%;
+    height : 4px;
+    border: none;
+    margin: 10px 0;
+    background: linear-gradient(to right,#d2911c,#49340f);
+
+}
+.content .icons{
+    width : 70%;
+    height : 7VH;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+.icons div{
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons div i{
+    color:#d2911c;
+    margin-right :10px ;
+    font-size: 1.5rem;
+
+}
+
+
+.v{
+    color:white;
+    text-decoration:none;
+}
+.image3{
+        inline-size: 600px;
+        animation-name:mye;
+        animation-duration:2s;
+}
+@keyframes my {
+    from{
+        opacity:0;
+    }
+    to {
+    opacity:2s;
+    }
+}
+
+.r{
+        color:#d2911c;
+ }
+@keyframes mye{
+      from{
+        opacity:0;
+        margin-top:  800px;
+        margin-left: 200px;
+    }
+    to {
+    opacity:2s;
+    margin-bottom: 0;
+    margin-left: 0;
+    }
+}
+
+.content{
+    animation-name:my;
+        animation-duration:3s;
+}

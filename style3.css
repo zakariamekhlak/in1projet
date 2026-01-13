@@ -1,0 +1,125 @@
+body{
+    background-image:url(artistic-blurry-colorful-wallpaper-background_58702-9666.avif);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.navbar {
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    background: linear-gradient(to right, #4b2c00, #d59800);
+    border-bottom: 3px solid #d6d6d6;
+}
+
+.logo {
+    font-size: 30px;
+    margin-right: auto;
+    color: #000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+
+
+body {
+    background: linear-gradient(120deg, #4b2c00, #d59800);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-section {
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.image-box img {
+    width: 420px;
+    filter: drop-shadow(0 15px 20px rgba(0,0,0,0.4));
+    transition: 0.4s;
+}
+
+.image-box img:hover {
+    transform: scale(1.05);
+}
+
+.text-box {
+    color: #fff;
+    max-width: 600px;
+}
+
+.text-box h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #3b1c00;
+}
+
+.text-box h1 span {
+    color: #ffe39a;
+}
+
+.text-box p {
+    margin: 15px 0 30px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.text-box h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ffe39a;
+}
+
+ 
+@media (max-width: 992px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-box img {
+        width: 300px;
+    }
+    .text-box {
+        max-width: 90%;
+    }
+
+    .nav-links {
+        gap: 30px;
+    }
+}
+.logo{
+     width : 50px;
+}
